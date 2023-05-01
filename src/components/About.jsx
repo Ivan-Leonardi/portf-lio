@@ -1,6 +1,10 @@
 import React from 'react';
+import AOS from 'aos';
+AOS.init();
+
 
 const About = () => {
+  
   return (
     <div name='sobre' className='w-full h-screen bg-[#06050c] text-gray-300'>
         <div className='flex flex-col justify-center items-center w-full h-full'>

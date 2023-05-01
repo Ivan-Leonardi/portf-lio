@@ -10,8 +10,10 @@ const Navbar = () => {
 
     return (
         <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#06050c] text-gray-300'>
-            <div>
-                <img src={Logo} alt="Logo do site" style={{ width: '50px' }} />
+            <div className='animate-pulse'>
+                <Link to='home' smooth={true} duration={500}>
+                    <img src={Logo} alt="Logo do site" style={{ width: '50px' }} />
+                </Link>
             </div>
 
             {/*menu*/}
@@ -52,7 +54,7 @@ const Navbar = () => {
             {/*mobile menu*/}
             <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#06050c] flex flex-col justify-center items-center'}>
                 <li className='py-6 text-3xl hover:text-gray-400'>
-                    <Link onClick={handleClick}  to='home' smooth={true} duration={500}>
+                    <Link onClick={handleClick} to='home' smooth={true} duration={500}>
                         Home
                     </Link>
                 </li>

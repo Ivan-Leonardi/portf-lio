@@ -1,14 +1,13 @@
 import React from 'react';
 import { Link } from 'react-scroll';
 import { HiArrowNarrowRight } from 'react-icons/hi';
-import backgroundSection from '../assets/pexels-merlin-lightpainting-11308988.jpg'
 
 const Home = () => {
     return (
         <div name='home' className='w-full h-screen bg-[#06050c] content-section'>                   
            
             {/*container*/}
-            <section  className='max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full'>
+            <section className='max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full'>
                 <p className='text-blue-500 sm:text-2xl'>Olá, me chamo</p>
                 <h1 className='text-4xl sm:text-5xl font-semibold text-[#ccd6f6]'>Ivan Leonardi</h1>
                 <h2 className='text-4xl sm:text-6xl font-bold text-blue-500'>Sou Desenvolvedor Front-end.</h2>
