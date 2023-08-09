@@ -18,7 +18,7 @@ const Navbar = () => {
             {/*menu*/}
             <ul className='md:flex'>
 
-                <a href="" className='text-1xl hover:text-gray-100'>
+                <a href="https://wa.me/5511998069652" target='_blank' className='text-1xl hover:text-gray-100'>
                     <button>
                         Contratar serviço
                     </button>
