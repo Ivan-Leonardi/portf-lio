@@ -1,10 +1,8 @@
 import React from 'react';
 
-
 import imgFigaro from '../imgProjects/figaro.png';
 import imgMeufilho from '../imgProjects/appmeufilho.png'
-import imgFinancas from '../imgProjects/imgFinancas.png';
-import imgImc from '../imgProjects/imgImc.png';
+import imgTodoList from '../imgProjects/todolist.png';
 import imgCSRN from '../imgProjects/csrn.jpg';
 import imgLP from '../imgProjects/lpevento.png';
 import imgNotes from '../imgProjects/notes.png';
@@ -20,7 +18,7 @@ const Work = () => {
             </div>
             {/*container*/}
             <div data-aos="zoom-in" data-aos-easing="linear"
-                data-aos-duration="1000" className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
+                data-aos-duration="500" className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
                 {/*grid items*/}
                 <div style={{backgroundImage: `url(${imgFigaro})`}} className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
 
@@ -30,7 +28,7 @@ const Work = () => {
                             Landing Page - Barbearia
                         </span>
                         <div className='pt-8 text-center'>
-                            <a href="">
+                            <a href="https://barbeariafigaro.com.br" target='_blank'>
                                 <button className='text-center rounded-lg px-4 py-3 m-2 text-gray-300 font-bold text-lg bg-blue-500'>Visitar site</button>
                             </a>                            
                         </div>
@@ -44,7 +42,7 @@ const Work = () => {
                             App nutrição infantil
                         </span>
                         <div className='pt-8 text-center'>
-                            <a href="">
+                            <a href="https://app.meufilhocomendobem.com.br" target='_blank'>
                                 <button className='text-center rounded-lg px-4 py-3 m-2 text-gray-300 font-bold text-lg bg-blue-500'>Visitar site</button>
                             </a>                           
                         </div>
@@ -58,18 +56,18 @@ const Work = () => {
                             Site empresarial
                         </span>
                         <div className='pt-8 text-center'>
-                            <a href="">
+                            <a href="https://csrn.netlify.app" target='_blank'>
                                 <button className='text-center rounded-lg px-4 py-3 m-2 text-gray-300 font-bold text-lg bg-blue-500'>Visitar site</button>
                             </a>                           
                         </div>
                     </div>
                 </div>
-                <div style={{backgroundImage: `url(${imgImc})`}} className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
+                <div style={{backgroundImage: `url(${imgTodoList})`}} className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
 
                     {/*hover effects*/}
                     <div className='opacity-0 group-hover:opacity-100 text-center'>
                         <span className='text-sm font-bold text-white tracking-wider'>
-                            App de cálculo de IMC
+                            App lista de tarefas
                         </span>
                         <div className='pt-8 text-center'>
                             <a href="">
@@ -86,7 +84,7 @@ const Work = () => {
                             Landing Page para evento
                         </span>
                         <div className='pt-8 text-center'>
-                            <a href="">
+                            <a href="https://lpindecor.netlify.app" target='_blank'>
                                 <button className='text-center rounded-lg px-4 py-3 m-2 text-gray-300 font-bold text-lg bg-blue-500'>Visitar site</button>
                             </a>                           
                         </div>
@@ -97,7 +95,7 @@ const Work = () => {
                     {/*hover effects*/}
                     <div className='opacity-0 group-hover:opacity-100 text-center'>
                         <span className='text-sm font-bold text-white tracking-wider'>
-                            App para gerenciamento de links
+                            App gerenciamento de links
                         </span>
                         <div className='pt-8 text-center'>
                             <a href="">

@@ -10,18 +10,18 @@ import CREDIBILIDADE from '../assets/distintivo.png';
 
 const Skills = () => {
     return (
-        <div name='tecnologias' className='sm:my-4 sm:mt-20 mt-96 w-full h-screen bg-[#06050c] text-gray-300'>
+        <div name='tecnologias' className='sm:my-4 sm:mt-20 w-full h-screen bg-[#06050c] text-gray-300'>
             {/*container*/}
-            <div className='max-w-[1000px] mx-auto my-8 p-4 flex flex-col justify-center w-full h-full'>
-                <div data-aos="fade-right" data-aos-delay="500" data-aos-easing="linear"
-                    data-aos-duration="1000">
+            <div className='max-w-[1000px] mx-auto my-8 p-4 flex flex-col justify-center w-full h-full mt-[480px]'>
+                <div data-aos="fade-right" data-aos-delay="300" data-aos-easing="linear"
+                    data-aos-duration="500">
                     <p className='text-2xl sm:text-3xl font-bold inline border-b-2 border-blue-500'>O Que Oferecemos:</p>
                     <p className='py-5'>Guiados pela Inovação Digital, estamos prontos para desbravar um amanhã online notável em parceria com você. Permita-nos ser a força que alimenta sua presença na web.</p>
                 </div>
 
                 <div data-aos="fade-down"
                     data-aos-easing="linear"
-                    data-aos-duration="800" className='w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-4 mt-12'>
+                    data-aos-duration="700" className='w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-4 mt-12'>
                     <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
                         <img className='w-10 mx-auto' src={SITES} alt="SITES icon" />
                         <p className='my-4'>Sites Personalizados</p>
