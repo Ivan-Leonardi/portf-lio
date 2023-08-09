@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Logo from '../assets/react.png';
 import { FaBars, FaTimes, FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 import { Link } from 'react-scroll';
@@ -12,7 +11,7 @@ const Navbar = () => {
         <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#06050c] text-gray-300'>
             <div className='animate-pulse'>
                 <Link to='home' smooth={true} duration={500}>
-                    <img src={Logo} alt="Logo do site" style={{ width: '50px' }} />
+                   <p className='text-2xl'><strong>Ivan</strong>Leonardi.</p>
                 </Link>
             </div>
 
@@ -30,7 +29,7 @@ const Navbar = () => {
                 </li>
                 <li className='hover:text-gray-400'>
                     <Link to='tecnologias' smooth={true} duration={500}>
-                        Tecnologias
+                        Serviços
                     </Link>
                 </li>
                 <li className='hover:text-gray-400'>
@@ -52,7 +51,8 @@ const Navbar = () => {
             </div>
 
             {/*mobile menu*/}
-            <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#06050c] flex flex-col justify-center items-center'}>
+           
+            <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'}>
                 <li className='py-6 text-3xl hover:text-gray-400'>
                     <Link onClick={handleClick} to='home' smooth={true} duration={500}>
                         Home
@@ -65,7 +65,7 @@ const Navbar = () => {
                 </li>
                 <li className='py-6 text-3xl hover:text-gray-400'>
                     <Link onClick={handleClick} to='tecnologias' smooth={true} duration={500}>
-                        Tecnologias
+                        Serviços
                     </Link>
                 </li>
                 <li className='py-6 text-3xl hover:text-gray-400'>
@@ -87,12 +87,7 @@ const Navbar = () => {
                         <a className='flex justify-between items-center w-full text-gray-300' href="https://www.linkedin.com/in/devleonardi" target='_blank'>
                             Linkedin <FaLinkedin size={30} />
                         </a>
-                    </li>
-                    <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333] rounded-md'>
-                        <a className='flex justify-between items-center w-full text-gray-300' href="https://github.com/Ivan-Leonardi" target='_blank'>
-                            GitHub <FaGithub size={30} />
-                        </a>
-                    </li>
+                    </li>                    
                     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#3b4666] rounded-md'>
                         <Link to='contato' className='flex justify-between items-center w-full text-gray-300'>
                             Email <HiOutlineMail size={30} />

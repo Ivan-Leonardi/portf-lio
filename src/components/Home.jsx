@@ -1,30 +1,32 @@
-import React from 'react';
-import { Link } from 'react-scroll';
-import { HiArrowNarrowRight } from 'react-icons/hi';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Home = () => {
-    return (
-        <div name='home' className='w-full h-screen bg-[#06050c] content-section'>                   
-           
-            {/*container*/}
-            <section className='max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full'>
-                <p className='text-blue-500 sm:text-2xl'>Olá, me chamo</p>
-                <h1 className='text-4xl sm:text-5xl font-semibold text-[#ccd6f6]'>Ivan Leonardi</h1>
-                <h2 className='text-4xl sm:text-6xl font-bold text-blue-500'>Sou Desenvolvedor Front-end.</h2>
-                <p className='text-[#8892b0] pt-4 max-w-[700px]'>Seja bem-vindo ao meu site, onde a criatividade encontra a tecnologia. Venha explorar meu portfólio e descobrir como eu posso ajudar a trazer sua ideia para a vida digital!</p>
+    useEffect(() => {
+        AOS.init();
+    }, []);
 
+    return (
+        <div name='home' className='w-full h-screen bg-[#06050c] content-section'>
+            {/*container*/}
+            <div className='max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full animate-[bounce_2s_ease]'>
+                <h1 
+                    className='text-3xl sm:text-5xl py-1 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-300'>
+                    Estratégias Digitais Vencedoras
+                </h1>
+                <h2 
+                    className='text-1xl sm:text-3xl font-bold py-4 text-[#ccd6f6]'>Amplie sua presença online com nossos serviços de desenvolvimento web de ponta, projetados para resultados excepcionais.
+                </h2>                
                 <div>
-                    <button
-                        className='text-white group border-[1px] px-6 py-3 my-2 flex items-center hover:bg-blue-500 hover:border-blue-400 rounded-md'>
-                        <Link to='projetos' smooth={true} duration={500}>
-                        Veja meus projetos
-                        </Link>
-                        <span className='group-hover:rotate-90 duration-300'>
-                            <HiArrowNarrowRight className='ml-3' />
-                        </span>
+                    <button className='text-white group font-bold px-3 py-3 text-2xl sm:px-6 sm:py-4 mt-4 flex items-center hover:bg-blue-600 hover:text-[#ccd6f6] rounded-md shadow-md shadow-[#040c16] hover:scale-110 duration-500 bg-gradient-to-r from-blue-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%'>
+                        <a href="https://wa.me/5511998069652" target='_blank' smooth={true} duration={500}>
+                            Quero contratar agora
+                        </a>
+
                     </button>
                 </div>
-            </section>
+            </div>
 
         </div>
     )
